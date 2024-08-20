@@ -1,4 +1,5 @@
 using API.Extensiones;
+using API.Middleware;
 using Data;
 using Data.Interfaces;
 using Data.Servicios;
@@ -26,6 +27,9 @@ builder.Logging.AddDebug();
 
 // Build the application
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleware>();
+app.UseStatusCodePagesWithReExecute("/errores/{0}");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

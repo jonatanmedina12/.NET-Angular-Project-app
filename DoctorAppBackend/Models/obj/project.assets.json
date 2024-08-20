@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositorios\\.NET-Project-app\\DoctorAppBackend\\Models\\Models.csproj",
+      "projectUniqueName": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "D:\\Repositorios\\.NET-Project-app\\DoctorAppBackend\\Models\\Models.csproj",
+      "projectPath": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\Jonat\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositorios\\.NET-Project-app\\DoctorAppBackend\\Models\\obj\\",
+      "outputPath": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",

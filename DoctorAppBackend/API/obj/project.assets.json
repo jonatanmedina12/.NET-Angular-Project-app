@@ -4334,11 +4334,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositorios\\.NET-Project-app\\DoctorAppBackend\\API\\API.csproj",
+      "projectUniqueName": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Repositorios\\.NET-Project-app\\DoctorAppBackend\\API\\API.csproj",
+      "projectPath": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Jonat\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositorios\\.NET-Project-app\\DoctorAppBackend\\API\\obj\\",
+      "outputPath": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jonat\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4356,11 +4356,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Repositorios\\.NET-Project-app\\DoctorAppBackend\\Data\\Data.csproj": {
-              "projectPath": "D:\\Repositorios\\.NET-Project-app\\DoctorAppBackend\\Data\\Data.csproj"
+            "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Data\\Data.csproj": {
+              "projectPath": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Data\\Data.csproj"
             },
-            "D:\\Repositorios\\.NET-Project-app\\DoctorAppBackend\\Models\\Models.csproj": {
-              "projectPath": "D:\\Repositorios\\.NET-Project-app\\DoctorAppBackend\\Models\\Models.csproj"
+            "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Models\\Models.csproj": {
+              "projectPath": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Models\\Models.csproj"
             }
           }
         }
