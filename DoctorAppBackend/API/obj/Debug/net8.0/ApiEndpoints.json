@@ -80,6 +80,64 @@
     ]
   },
   {
+    "ContainingType": "API.Controllers.EspecialidadController",
+    "Method": "Get",
+    "RelativePath": "api/Especialidad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.EspecialidadController",
+    "Method": "Crear",
+    "RelativePath": "api/Especialidad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modeloDto",
+        "Type": "Models.DTOs.EspecialidadDTo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.EspecialidadController",
+    "Method": "Editar",
+    "RelativePath": "api/Especialidad",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modeloDto",
+        "Type": "Models.DTOs.EspecialidadDTo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.EspecialidadController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Especialidad/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.UsuarioController",
     "Method": "GetUsuario",
     "RelativePath": "api/Usuario",

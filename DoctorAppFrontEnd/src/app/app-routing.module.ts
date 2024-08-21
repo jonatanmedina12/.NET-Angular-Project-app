@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './usuario/login/login.component';
-import { LayoutComponent } from './compartido/layout/layout.component';
-
+import {} from '../app/especialidad/especialidad.module'
 const routes: Routes = [
   {
     path:'',component:LoginComponent,pathMatch:'full'
@@ -13,7 +12,7 @@ const routes: Routes = [
 
   },
   {
-    path:'layout',component:LayoutComponent,pathMatch:'full'
+    path:'layout',loadChildren:()=> import('./compartido/compartido.module').then(m=>m.CompartidoModule) //layout/dasboard
   },
   {
     path:'**',
