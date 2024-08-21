@@ -3,40 +3,28 @@
   "WorkspaceRootPath": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A6B36F94-C875-49DE-B0A6-B72D650C4617}|Models\\Models.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\models\\dtos\\especialidaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B36F94-C875-49DE-B0A6-B72D650C4617}|Models\\Models.csproj|solutionrelative:models\\dtos\\especialidaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\api\\controllers\\especialidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|solutionrelative:api\\controllers\\especialidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6B36F94-C875-49DE-B0A6-B72D650C4617}|Models\\Models.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\models\\dtos\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6B36F94-C875-49DE-B0A6-B72D650C4617}|Models\\Models.csproj|solutionrelative:models\\dtos\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\api\\extensiones\\extensiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|solutionrelative:api\\extensiones\\extensiones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B6D9FA4F-694C-4189-97EC-11D2CEED19B4}|BLL\\BLL.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\bll\\servicios\\especialidadservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D9FA4F-694C-4189-97EC-11D2CEED19B4}|BLL\\BLL.csproj|solutionrelative:bll\\servicios\\especialidadservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\api\\errores\\apivalidacionerrorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|solutionrelative:api\\errores\\apivalidacionerrorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\api\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|solutionrelative:api\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\api\\errores\\apierrorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|solutionrelative:api\\errores\\apierrorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\api\\controllers\\errortestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|solutionrelative:api\\controllers\\errortestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\api\\errores\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|solutionrelative:api\\errores\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5D27DCCA-BD00-47ED-AF89-2F2538516A8F}|API\\API.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6B36F94-C875-49DE-B0A6-B72D650C4617}|Models\\Models.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\models\\dtos\\registrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6B36F94-C875-49DE-B0A6-B72D650C4617}|Models\\Models.csproj|solutionrelative:models\\dtos\\registrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B6D9FA4F-694C-4189-97EC-11D2CEED19B4}|BLL\\BLL.csproj|d:\\repositorios\\.net-angular-project-app\\doctorappbackend\\bll\\servicios\\interfaces\\iespecialidadservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6D9FA4F-694C-4189-97EC-11D2CEED19B4}|BLL\\BLL.csproj|solutionrelative:bll\\servicios\\interfaces\\iespecialidadservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,119 +39,75 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Extensiones.cs",
-              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Extensiones\\Extensiones.cs",
-              "RelativeDocumentMoniker": "API\\Extensiones\\Extensiones.cs",
-              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Extensiones\\Extensiones.cs",
-              "RelativeToolTip": "API\\Extensiones\\Extensiones.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAkwDIAAAAfAAAAAAAAAA==",
+              "Title": "EspecialidadDTo.cs",
+              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Models\\DTOs\\EspecialidadDTo.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\EspecialidadDTo.cs",
+              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Models\\DTOs\\EspecialidadDTo.cs",
+              "RelativeToolTip": "Models\\DTOs\\EspecialidadDTo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T23:20:14.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApiValidacionErrorResponse.cs",
-              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Errores\\ApiValidacionErrorResponse.cs",
-              "RelativeDocumentMoniker": "API\\Errores\\ApiValidacionErrorResponse.cs",
-              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Errores\\ApiValidacionErrorResponse.cs",
-              "RelativeToolTip": "API\\Errores\\ApiValidacionErrorResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T23:19:06.255Z",
+              "WhenOpened": "2024-08-21T02:53:15.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Program.cs",
-              "RelativeDocumentMoniker": "API\\Program.cs",
-              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Program.cs",
-              "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Title": "EspecialidadController.cs",
+              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Controllers\\EspecialidadController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\EspecialidadController.cs",
+              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Controllers\\EspecialidadController.cs",
+              "RelativeToolTip": "API\\Controllers\\EspecialidadController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T23:16:45.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-21T02:44:21.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Models\\DTOs\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "Models\\DTOs\\ApiResponse.cs",
+              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Models\\DTOs\\ApiResponse.cs",
+              "RelativeToolTip": "Models\\DTOs\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T02:42:28.54Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ErrorController.cs",
-              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Controllers\\ErrorController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\ErrorController.cs",
-              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Controllers\\ErrorController.cs",
-              "RelativeToolTip": "API\\Controllers\\ErrorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Title": "Extensiones.cs",
+              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Extensiones\\Extensiones.cs",
+              "RelativeDocumentMoniker": "API\\Extensiones\\Extensiones.cs",
+              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Extensiones\\Extensiones.cs",
+              "RelativeToolTip": "API\\Extensiones\\Extensiones.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T23:15:22.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-21T02:41:33.024Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ApiErrorResponse.cs",
-              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Errores\\ApiErrorResponse.cs",
-              "RelativeDocumentMoniker": "API\\Errores\\ApiErrorResponse.cs",
-              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Errores\\ApiErrorResponse.cs",
-              "RelativeToolTip": "API\\Errores\\ApiErrorResponse.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA1wBMAAAA/AAAAAAAAAA==",
+              "Title": "EspecialidadServicio.cs",
+              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\BLL\\Servicios\\EspecialidadServicio.cs",
+              "RelativeDocumentMoniker": "BLL\\Servicios\\EspecialidadServicio.cs",
+              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\BLL\\Servicios\\EspecialidadServicio.cs",
+              "RelativeToolTip": "BLL\\Servicios\\EspecialidadServicio.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAqwGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T23:09:07.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApiException.cs",
-              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Errores\\ApiException.cs",
-              "RelativeDocumentMoniker": "API\\Errores\\ApiException.cs",
-              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Errores\\ApiException.cs",
-              "RelativeToolTip": "API\\Errores\\ApiException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T22:58:55.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "API",
-              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\API.csproj",
-              "RelativeDocumentMoniker": "API\\API.csproj",
-              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\API.csproj",
-              "RelativeToolTip": "API\\API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-20T22:58:03.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RegistroDto.cs",
-              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Models\\DTOs\\RegistroDto.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\RegistroDto.cs",
-              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\Models\\DTOs\\RegistroDto.cs",
-              "RelativeToolTip": "Models\\DTOs\\RegistroDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T22:54:59.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-21T02:32:24.117Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ErrorTestController.cs",
-              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Controllers\\ErrorTestController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\ErrorTestController.cs",
-              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\API\\Controllers\\ErrorTestController.cs",
-              "RelativeToolTip": "API\\Controllers\\ErrorTestController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAwwDQAAAAyAAAAAAAAAA==",
+              "Title": "IEspecialidadServicio.cs",
+              "DocumentMoniker": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\BLL\\Servicios\\Interfaces\\IEspecialidadServicio.cs",
+              "RelativeDocumentMoniker": "BLL\\Servicios\\Interfaces\\IEspecialidadServicio.cs",
+              "ToolTip": "D:\\Repositorios\\.NET-Angular-Project-app\\DoctorAppBackend\\BLL\\Servicios\\Interfaces\\IEspecialidadServicio.cs",
+              "RelativeToolTip": "BLL\\Servicios\\Interfaces\\IEspecialidadServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T22:48:38.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-21T02:30:56.141Z"
             }
           ]
         }

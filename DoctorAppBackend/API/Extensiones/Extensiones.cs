@@ -1,11 +1,15 @@
 ﻿using API.Errores;
+using BLL.Servicios;
+using BLL.Servicios.Interfaces;
 using Data;
 using Data.Interfaces;
+using Data.Interfaces.IRepositorio;
+using Data.Repositorio;
 using Data.Servicios;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Utilidades;
 
 namespace API.Extensiones
 {
@@ -65,6 +69,9 @@ namespace API.Extensiones
                     return new BadRequestObjectResult(errorResponse);
                 };
             });
+            services.AddScoped<IUnidadTrabajo, UnidadTrabajo>();
+            services.AddAutoMapper(typeof(MappingProfile).Assembly);
+            services.AddScoped<IEspecialidadServicio,EspecialidadServicio>();
 
 
             return services;
