@@ -1,6 +1,7 @@
 using API.Extensiones;
 using API.Middleware;
 using Data;
+using Data.Inicializador;
 using Data.Interfaces;
 using Data.Servicios;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -19,7 +20,7 @@ builder.Services.AgregarServiciosAplicacion(builder.Configuration);
 
 // Agregar servicios de identidad
 builder.Services.AgregarServiciosIdentidad(builder.Configuration);
-
+builder.Services.AddScoped<IdbInicializador,DbInicializador>();
 // Configurar logging
 builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 builder.Logging.AddConsole();
@@ -46,7 +47,20 @@ app.UseCors(x => x.AllowAnyOrigin()
 
 app.UseAuthentication();
 app.UseAuthorization();
-
+using(var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+    try
+    {
+        var inicializador = services.GetRequiredService<IdbInicializador>();
+        inicializador.Inicializar();
+    }
+    catch(Exception ex) {
+        var logger = loggerFactory.CreateLogger<Program>();
+        logger.LogError(ex, "uN ERROR OCURIO AL EJECUTAR LA MIGRACION");
+    }
+}
 app.MapControllers();
 
 app.Run();

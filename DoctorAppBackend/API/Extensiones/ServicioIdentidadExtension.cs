@@ -5,6 +5,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
+using Models.Entidades;
+using Microsoft.AspNetCore.Identity;
+using Data;
 
 namespace API.Extensiones
 {
@@ -12,6 +15,16 @@ namespace API.Extensiones
     {
         public static IServiceCollection AgregarServiciosIdentidad(this IServiceCollection services, IConfiguration configuration)
         {
+
+
+            services.AddIdentityCore<UsuarioAplicacion>(opt =>
+            {
+                opt.Password.RequireNonAlphanumeric = false;
+            })
+                .AddRoles<RolAplicacion>()
+                .AddRoleManager<RoleManager<RolAplicacion>>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+
             var tokenKey = configuration["TokenKey"];
             if (string.IsNullOrEmpty(tokenKey))
             {
@@ -49,7 +62,14 @@ namespace API.Extensiones
                         }
                     };
                 });
+            services.AddAuthorization(opt =>
+            {
+                opt.AddPolicy("AdminRol", policy => policy.RequireRole("Admin"));
 
+                opt.AddPolicy("AdminAgendadorRol", policy => policy.RequireRole("Admin", "Agendador"));
+                opt.AddPolicy("AdminDoctorRol", policy => policy.RequireRole("Admin", "Doctor"));
+
+            });
             return services;
         }
     }

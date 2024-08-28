@@ -1,28 +1,29 @@
-﻿using Data;
-using Data.Interfaces;
+﻿using Data.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Models.DTOs;
 using Models.Entidades;
-using System.Security.Cryptography;
-using System.Text;
 
-namespace API.Controllers 
-{ 
+namespace API.Controllers
+{
 
     public class UsuarioController : BaseController
     {
-        private readonly ApplicationDbContext _db;
+        private readonly UserManager<UsuarioAplicacion> _db;
         private readonly ITokenServicio _tokenServicio;
-
-        public UsuarioController(ApplicationDbContext db,ITokenServicio tokenServicio)
+        private ApiResponse _apiResponse;
+        private readonly RoleManager<RolAplicacion> _rolManager;
+        public UsuarioController(UserManager<UsuarioAplicacion> db,ITokenServicio tokenServicio, ApiResponse apiResponse, RoleManager<RolAplicacion> rolManager)
         {
             _db = db;
             _tokenServicio = tokenServicio;
+            _apiResponse = new();
+            _rolManager = rolManager;
         }
-        [Authorize]
+        /*
+         * [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuario()
         {
@@ -41,52 +42,85 @@ namespace API.Controllers
             return Ok(usuario); 
 
         }
+         */
+        [Authorize(Policy = "AdminRol")]
         [HttpPost("registro")]
         public async Task<ActionResult<UsuarioDto>> Registro(RegistroDto registroDto)
         {
 
             if(await UsuarioExiste(registroDto.Username)) return BadRequest("UserName ya esta Registrado");
 
-            using var hmac = new HMACSHA512();
-            var usuario = new Usuario
+            //using var hmac = new HMACSHA512();
+            var usuario = new UsuarioAplicacion
             {
-                Username = registroDto.Username,
-                passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registroDto.Password)),
-                passwordSalt = hmac.Key
+                UserName = registroDto.Username,
+                Apellidos = registroDto.Apellidos,
+                Nombres = registroDto.Nombres,
+                Email = registroDto.Email
+
+             //   passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registroDto.Password)),
+             //   passwordSalt = hmac.Key
             };
-            _db.Usuarios.Add(usuario);
-            await _db.SaveChangesAsync();
+            var resultado = await _db.CreateAsync(usuario, registroDto.Password);
+            if (!resultado.Succeeded)
+            {
+                return BadRequest(resultado.Errors.ToString());
+            }
+            var rolResultado = await _db.AddToRoleAsync(usuario, registroDto.Rol);
+            if (!rolResultado.Succeeded)
+            {
+                return BadRequest(resultado.Errors.ToString());
+
+            }
             return new UsuarioDto
             {
-                Username = usuario.Username,
-                Token = _tokenServicio.CrearToken(usuario)
+                Username = usuario.UserName,
+                Token = await _tokenServicio.CrearToken(usuario)
             };
 
         }
         private async Task<bool> UsuarioExiste(string Username)
         {
             
-            return await _db.Usuarios.AnyAsync(u => u.Username == Username.ToLower());
+            return await _db.Users.AnyAsync(u => u.UserName == Username.ToLower());
 
         }
 
         [HttpPost("login")]
         public async Task<ActionResult<UsuarioDto>> Login(LoginDto loginDto)
         {
-            var usuario = await _db.Usuarios.SingleOrDefaultAsync(x => x.Username == loginDto.Username);
+            var usuario = await _db.Users.SingleOrDefaultAsync(x => x.UserName == loginDto.Username);
             if (usuario == null) return Unauthorized("Usuario no válido");
 
-            using var hmac = new HMACSHA512(usuario.passwordSalt);
-            var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.Password));
+          //  using var hmac = new HMACSHA512(usuario.passwordSalt);
+           // var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.Password));
 
-            if (!computedHash.SequenceEqual(usuario.passwordHash))
-                return Unauthorized("Contraseña no válida");
-
+            //if (!computedHash.SequenceEqual(usuario.passwordHash))
+             //   return Unauthorized("Contraseña no válida");
+             var resultado = await _db.CheckPasswordAsync(usuario,loginDto.Password);
+            if (!resultado)
+            {
+                return Unauthorized("password no valido");
+            }
             return new UsuarioDto
             {
-                Username = usuario.Username,
-                Token = _tokenServicio.CrearToken(usuario),
+                Username = usuario.UserName,
+                Token = await _tokenServicio.CrearToken(usuario),
             };
+        }
+        [Authorize(Policy = "AdminRol")]
+
+        [HttpGet("ListadoRoles")]
+        public  IActionResult GetRoles()
+        {
+            var roles = _rolManager.Roles.Select( r => new {NombreRol = r.Name} ).ToList();
+            _apiResponse.Resultado = roles;
+            _apiResponse.IsExitoso = true;
+            _apiResponse.StatusCode = System.Net.HttpStatusCode.OK;
+
+            return Ok(_apiResponse);
+
+
         }
 
     }

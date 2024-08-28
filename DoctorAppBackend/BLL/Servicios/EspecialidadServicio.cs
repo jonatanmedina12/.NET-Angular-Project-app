@@ -112,6 +112,22 @@ namespace BLL.Servicios
             }
         }
 
-       
+        public async Task<IEnumerable<EspecialidadDTo>> ObtenerActivos()
+        {
+            try
+            {
+
+                var lista = await _unidadTrabajo.especialidad.ObtenerTodos(x=> x.Estado==true,orderBy: e => e.OrderBy(e => e.NombreEspecialidad));
+                return _mapper.Map<IEnumerable<EspecialidadDTo>>(lista);
+
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
     }
 }
