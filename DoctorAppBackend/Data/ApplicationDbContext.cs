@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Models.Entidades;
 using System;
 using System.Collections.Generic;
@@ -9,7 +11,8 @@ using System.Threading.Tasks;
 
 namespace Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<UsuarioAplicacion,RolAplicacion,int , IdentityUserClaim<int>,RolUsuarioAplicacion,IdentityUserLogin<int>,
+       IdentityRoleClaim<int>,IdentityUserToken<int>>
     {
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
@@ -17,9 +20,10 @@ namespace Data
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<UsuarioAplicacion> usuarioAplicacions { get; set; }
 
         public DbSet<Especialidad> Especialidad { get; set; }
-
+        public DbSet<Medico> medicos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

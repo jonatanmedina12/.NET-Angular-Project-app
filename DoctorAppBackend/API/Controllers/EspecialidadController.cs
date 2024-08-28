@@ -1,11 +1,12 @@
 ﻿using BLL.Servicios.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Models.DTOs;
 
 namespace API.Controllers
 {
-
+    [Authorize(Policy ="AdminAgendandorRol")]
     public class EspecialidadController : BaseController
     {
         private readonly IEspecialidadServicio _especialidadServicio;
@@ -32,6 +33,27 @@ namespace API.Controllers
 
                 _response.IsExitoso=false;
                 _response.Mensaje=ex.Message;
+                _response.StatusCode = System.Net.HttpStatusCode.BadRequest;
+
+            }
+            return Ok(_response);
+
+        }
+        [HttpGet("listadoActivos")]
+        public async Task<IActionResult>ObtenerActivos()
+        {
+            try
+            {
+                _response.Resultado = await _especialidadServicio.ObtenerActivos();
+                _response.IsExitoso = true;
+                _response.StatusCode = System.Net.HttpStatusCode.OK;
+
+            }
+            catch (Exception ex)
+            {
+
+                _response.IsExitoso = false;
+                _response.Mensaje = ex.Message;
                 _response.StatusCode = System.Net.HttpStatusCode.BadRequest;
 
             }

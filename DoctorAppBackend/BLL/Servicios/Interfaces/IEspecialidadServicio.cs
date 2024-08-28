@@ -10,6 +10,8 @@ namespace BLL.Servicios.Interfaces
     public interface IEspecialidadServicio
     {
         Task<IEnumerable<EspecialidadDTo>> ObtenerTodos();
+        Task<IEnumerable<EspecialidadDTo>> ObtenerActivos();
+
         Task<EspecialidadDTo> Agregar(EspecialidadDTo modeloDto);
         Task Actualizar (EspecialidadDTo modeloDto);
 

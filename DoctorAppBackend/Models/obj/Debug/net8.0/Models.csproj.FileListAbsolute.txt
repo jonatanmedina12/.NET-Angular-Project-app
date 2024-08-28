@@ -22,3 +22,4 @@ D:\Repositorios\.NET-Angular-Project-app\DoctorAppBackend\Models\obj\Debug\net8.
 D:\Repositorios\.NET-Angular-Project-app\DoctorAppBackend\Models\obj\Debug\net8.0\refint\Models.dll
 D:\Repositorios\.NET-Angular-Project-app\DoctorAppBackend\Models\obj\Debug\net8.0\Models.pdb
 D:\Repositorios\.NET-Angular-Project-app\DoctorAppBackend\Models\obj\Debug\net8.0\ref\Models.dll
+D:\Repositorios\.NET-Angular-Project-app\DoctorAppBackend\Models\obj\Debug\net8.0\Models.csproj.AssemblyReference.cache
