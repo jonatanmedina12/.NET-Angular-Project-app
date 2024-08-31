@@ -49,5 +49,5 @@ La aplicación está desarrollada utilizando **.NET Core** en el backend, **Angu
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/medical-management-app.git](https://github.com/jonatanmedina12/.NET-Angular-Project-app.git
+   git clone https://github.com/jonatanmedina12/.NET-Angular-Project-app.git
   
